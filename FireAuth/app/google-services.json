@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "912491613504",
+    "project_id": "clinica-veterinaria-ae955",
+    "storage_bucket": "clinica-veterinaria-ae955.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912491613504:android:4805a73cb5a4fae6b87ea5",
+        "android_client_info": {
+          "package_name": "com.example.fireauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBm7HKn3ZBEprs2SHjwD1XsPrQy3GvNKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
