@@ -11,7 +11,10 @@ Tela de Login
 
 
 
+
+
 Home do App
+
 ![image](https://github.com/user-attachments/assets/a3101d13-28a0-40d1-8733-878c07c73abb)
 
 
