@@ -5,12 +5,15 @@ O FireAuth evoluiu para um aplicativo Android nativo que combina autenticação 
 
 
 Tela de Login
-![image](https://github.com/user-attachments/assets/617d09c8-f4b3-4309-a42a-4d2cde8a0c4c)
+
+![image](https://github.com/user-attachments/assets/16807e85-0223-4da5-9523-396de19c3822)
+
 
 
 
 Home do App
-![image](https://github.com/user-attachments/assets/6398704e-e809-4354-9ff9-827abc04ee31)
+![image](https://github.com/user-attachments/assets/a3101d13-28a0-40d1-8733-878c07c73abb)
+
 
 
 
