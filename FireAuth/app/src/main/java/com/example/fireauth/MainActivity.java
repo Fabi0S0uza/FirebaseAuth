@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText emailEditText, passwordEditText;
     private Button loginButton, goToRegisterButton;
     private FirebaseAuth mAuth;
+    private Button findPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +26,18 @@ public class MainActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.passwordEditText);
         loginButton = findViewById(R.id.loginButton);
         goToRegisterButton = findViewById(R.id.goToRegisterButton);
-
+        findPassword = findViewById(R.id.btn_Password);
         mAuth = FirebaseAuth.getInstance();
+
+
+
+        findPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, forgotPassword.class));
+            }
+        });
+
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         goToRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, register.class));  // Corrigi o nome da activity de registro aqui
+                startActivity(new Intent(MainActivity.this, register.class));
             }
         });
     }
@@ -53,13 +64,15 @@ public class MainActivity extends AppCompatActivity {
                         FirebaseUser user = mAuth.getCurrentUser();
                         Toast.makeText(MainActivity.this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
 
-                        // Redirecionar para a tela logado
-                        Intent intent = new Intent(MainActivity.this, logado.class);
+
+                        Intent intent   = new Intent(MainActivity.this, logado.class);
                         startActivity(intent);
-                        finish();  // Finaliza a activity de login
+                        finish();
                     } else {
                         Toast.makeText(MainActivity.this, "Falha no login: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });
     }
+
+
 }
