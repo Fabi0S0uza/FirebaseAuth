@@ -1,7 +1,18 @@
-🔐 FireAuth - Firebase Authentication App
-📱 Projeto de Autenticação Firebase para Android
+🔐 FireAuth - Aplicativo de Autenticação e Frases Motivacionais
+📱 Projeto de Autenticação Firebase para Android + Exibição de Frases
 📝 Descrição do Projeto
-O FireAuth é um aplicativo Android nativo desenvolvido em Java que utiliza o Firebase Authentication para gerenciar autenticação de usuários via email e senha. O app permite que os usuários façam login, registrem novas contas e façam logout com facilidade, garantindo um gerenciamento de sessão seguro e uma navegação suave entre as telas.
+O FireAuth evoluiu para um aplicativo Android nativo que combina autenticação de usuários usando Firebase Authentication com a exibição de frases motivacionais. Agora, além de gerenciar o login, os usuários podem navegar por diversas frases inspiradoras através de botões "anterior" e "próxima", com uma interface simples e fluida.
+
+
+Tela de Login
+![image](https://github.com/user-attachments/assets/617d09c8-f4b3-4309-a42a-4d2cde8a0c4c)
+
+
+
+Home do App
+![image](https://github.com/user-attachments/assets/6398704e-e809-4354-9ff9-827abc04ee31)
+
+
 
 🛠️ Tecnologias Utilizadas
 Linguagem: Java (Android Nativo) ☕
@@ -12,34 +23,42 @@ IDE: Android Studio 🛠️
 1. 🔑 Tela de Login
 Entrada de email e senha.
 Autenticação via FirebaseAuth.signInWithEmailAndPassword 🔐.
-Mensagem de erro exibida em caso de falha (senha incorreta ou usuário inexistente) ⚠️.
+Mensagem de erro exibida em caso de falha ⚠️.
 Redirecionamento para a tela de sucesso (LogadoActivity) após login bem-sucedido ✅.
 2. 📝 Tela de Registro
-Botão para navegar até a tela de registro (RegisterActivity) ➡️.
+Botão para navegação até a tela de registro (RegisterActivity) ➡️.
 Registro de novos usuários via FirebaseAuth.createUserWithEmailAndPassword 🆕.
-Login disponível imediatamente após o registro bem-sucedido 🎉.
-3. 🚪 Logout
-Opção de logout na tela LogadoActivity ⬅️.
-Uso de FirebaseAuth.signOut() para desconectar o usuário 🔒.
-Redirecionamento de volta à tela de login (MainActivity) 🏠.
-4. 👤 Exibição de Dados do Usuário
-Exibe o email do usuário logado através de uma TextView na LogadoActivity 📧.
-Dados obtidos com FirebaseUser.getEmail().
+Login disponível imediatamente após o registro 🎉.
+3. 👤 Tela Logado com Frases Motivacionais
+Exibe o email do usuário logado 📧.
+Apresenta uma frase motivacional inicial, com botões para navegar entre frases.
+Botão "Próxima": exibe a próxima frase motivacional ➡️.
+Botão "Anterior": exibe a frase anterior ⬅️.
+Frases motivacionais:
+"A jornada pode ser longa, mas cada passo te leva mais perto do seu sonho."
+"Sorria para a vida e ela te devolverá motivos para ser feliz."
+"A mudança começa dentro de você. O mundo reflete aquilo que você acredita ser possível."
+"O que parece impossível hoje será sua maior conquista amanhã."
+Botão de Logout: desconecta o usuário usando FirebaseAuth.signOut() e redireciona de volta à tela de login 🚪.
+4. 🚪 Logout
+Opção de logout na LogadoActivity para desconectar o usuário.
 📂 Estrutura de Códigos e Classes
 1. MainActivity (Tela de Login)
 Componentes:
 Campos de entrada (EditText) para email e senha ✉️🔑.
-Botão de login e botão para navegação à tela de registro 🖱️.
+Botão de login e botão para navegar à tela de registro 🖱️.
 Método:
 loginUser: Autentica o usuário com o Firebase e o redireciona após login bem-sucedido 🔓.
 2. RegisterActivity (Tela de Registro)
 Componentes:
 Funcionalidade para registrar novos usuários via Firebase 🆕.
 Login habilitado logo após o registro 🗝️.
-3. LogadoActivity (Tela Após Login)
+3. LogadoActivity (Tela de Frases Motivacionais)
 Componentes:
 Exibe o email do usuário logado em uma TextView 📧.
-Botão de logout que desloga o usuário e redireciona para a tela de login 🚪.
+Apresenta uma frase motivacional inicial com botões para navegar entre frases 🌟.
+Botão Próximo e Botão Anterior para alternar entre as frases 🔄.
+Botão de Logout que desconecta o usuário 🚪.
 🔥 Firebase Authentication
 Configuração:
 Firebase integrado ao projeto utilizando o arquivo google-services.json 📁.
@@ -48,8 +67,9 @@ Métodos de Autenticação:
 Login e logout implementados com segurança utilizando a API do Firebase Authentication 🛡️.
 🌟 Pontos Fortes
 Integração Simples com Firebase: A implementação segue boas práticas, garantindo fácil manutenção e entendimento 💡.
-Navegação Suave: Alternância eficiente entre as telas de login, registro e sessão logada 🔄.
+Navegação Suave: Alternância eficiente entre as telas de login, registro e frases motivacionais 🔄.
 Gerenciamento de Sessão: Login e logout funcionam corretamente, mantendo o estado do usuário durante a sessão 🕒.
+Adição de Conteúdo Motivacional: O app agora oferece uma experiência interativa, permitindo que o usuário navegue por frases que trazem positividade e motivação ✨.
 🛠️ Sugestões de Melhorias Futuras
 1. 🛡️ Validação de Entradas:
 Verificar se o email tem um formato válido 📧.
@@ -58,7 +78,7 @@ Garantir que a senha possua um número mínimo de caracteres 🔑.
 Verificar se o usuário já está autenticado ao abrir o aplicativo, redirecionando diretamente para a LogadoActivity se estiver logado 🔒.
 3. ⏳ Feedback Visual:
 Adicionar um indicador de progresso (como um ProgressBar) durante as operações de login e registro 🚥.
-4. 🔑 Recuperação de Senha:
-Implementar a função de recuperação de senha via FirebaseAuth.sendPasswordResetEmail 📬.
+4. 📃 Mais Frases Motivacionais:
+Adicionar novas frases motivacionais ou permitir que o usuário adicione suas próprias frases para maior personalização ✍️.
 🎯 Conclusão
-O aplicativo FireAuth é uma implementação funcional de autenticação de usuários com o Firebase. Com uma interface simples e navegação intuitiva, ele gerencia as sessões de forma eficaz. Pequenas melhorias podem refinar ainda mais a experiência do usuário, como validações mais robustas e feedback visual 💡.
+O aplicativo FireAuth agora oferece uma experiência mais completa e interativa, combinando funcionalidades essenciais de autenticação com o toque positivo das frases motivacionais. A navegação entre as telas é fluida, o gerenciamento de sessão é seguro e as frases fornecem um toque agradável para os usuários. Com algumas melhorias adicionais, o app pode evoluir ainda mais em termos de experiência do usuário 💡.
