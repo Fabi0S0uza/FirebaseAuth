@@ -4,16 +4,20 @@
 O FireAuth evoluiu para um aplicativo Android nativo que combina autenticação de usuários usando Firebase Authentication com a exibição de frases motivacionais. Agora, além de gerenciar o login, os usuários podem navegar por diversas frases inspiradoras através de botões "anterior" e "próxima", com uma interface simples e fluida.
 
 
-Tela de Login
+# Tela de Login
 
 ![image](https://github.com/user-attachments/assets/16807e85-0223-4da5-9523-396de19c3822)
 
 
+# Tela de Cadastro
 
+![image](https://github.com/user-attachments/assets/6fb83654-0814-460f-9eab-da4e3b0abc28)
 
+# Tela Redefinição de Senha
 
+![image](https://github.com/user-attachments/assets/db18741a-8a4e-4bc7-9a77-48738c5ae436)
 
-Home do App
+# Home do App
 
 ![image](https://github.com/user-attachments/assets/a3101d13-28a0-40d1-8733-878c07c73abb)
 
